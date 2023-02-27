@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+  body{
+    background-color:thistle;   font-family: "Roboto Slab", serif ;
+  }
+
+  .open-button{
+    background-color: red; color:white; padding:16px 20px; border:none; cursor:pointer; opacity:0.8; position:fixed; bottom:23px; right:28px; width:280px;
+  }
+  .form-popup{
+    display:none; position:fixed; bottom:0; right:15px; border: 3px solid #f1f1f1; z-index:9;
+  }
+  .form-container{
+    max-width:300px; padding:10px; background-color: bisque;
+  }
+.form-container input[type=tel]:focus{
+  background-color: aliceblue; outline:none;
+}
+.form-container .btn{
+  background-color: aquamarine; color:cornflowerblue; padding: 16px 20px; border:black; cursor:pointer; width:100%; margin-bottom:10px; opacity:0.8;
+}
+.form-container .cancel{
+  background-color: red;
+}
+.form-container .btn:hover, .open-button:hover{
+  opacity:1;
+}
+</style>
+<script>
+        function openForm(){
+          document.getElementById("myForm").style.display="block";
+        }
+        function closeForm(){
+          document.getElementById("myForm").style.display="none";
+        }
+</script>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="Logo" width="" height="55" class="d-inline-block align-text-top">
+        </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="material-icons">home</i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page.html"><i class="material-icons">schema</i>Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><i class="material-icons">connect_without_contact</i>Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page.html"><i class="material-icons">on_device_training</i>About</a>
+        </li>
+        <li class="nav-item"> 
+        <button type="button" class="btn btn-outline-warning open-button" onclick="openForm()">Signup.Login</button>
+      <div class="form-popup" id="myForm"><form action="/action_page.php" class="form-container">
+        <h4>Login or Signup</h4>
+        <input type="tel" id="phone" name="phone" placeholder="Mobile Number *" pattern="[o-9]{10}" required><br>
+        <small class="">Please enter a valid mobile number(10 digits)</small><br>
+        <small>By continuing, I agree to the <b>Terms of Use</b> & <b>Privacy Policy</b></small><br>
+        <button type="submit" class="btn"><b>Login</b></button>
+        <button type="button" class="btn cancel" onclick="closeForm()"><b>Close</b></button><br>
+        <small>Have trouble logging in? <b>Get help</b></small>
+      </form></div>
+    
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav><br>
+<h2 align="center">        Welcome To <b>EZERIDZ</b></h2>
+<br>
+<div class="card-group">
+  <div class="card">
+    <img src="offer.png" class="card-img-top" alt="" width="" height="200">
+    <div class="card-body">
+    <p class="card-text">If you are a driver, this platform is made to meet you with potential customers. Start providing services to people in your nearby locations.</p>
+    <a href="#" class="btn btn-warning">OFFER RIDE</a>
+  </div>
+  </div>
+  <div class="card">
+    <img src="book.png" class="card-img-top" alt="..." width="" height="200">
+    <div class="card-body">
+    <p class="card-text">If you are looking to visit places, this platform will arrange drivers to you. Get friendly and optimal cost rides easily.</p>
+    <a href="#" class="btn btn-info">BOOK RIDE</a>
+  </div>    
+</div>
+  <div class="card">
+    <img src="rent.png" class="card-img-top" width="" height="200" alt="...">
+<div class="card-body">
+    <p class="card-text">If you are not using your scooty,bikes,cars or any such vehicles, you can rent them for certain time and make good earnings through it.</p>
+    <a href="#" class="btn btn-success">RENT VEHICLES</a>
+  </div>
+  </div>
+</div>
+</body>
+</html>
